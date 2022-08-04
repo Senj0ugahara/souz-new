@@ -1,0 +1,33 @@
+.countercurrent {
+  padding: 70px 0;
+  background-color: var(--light-color);
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--greend-color);
+  }
+
+  &__desc {
+    max-width: 1050px;
+    margin: 0 auto 50px;
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--text-color);
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__table {
+    width: 1260px;
+    margin: 0 auto;
+  }
+}

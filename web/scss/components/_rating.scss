@@ -1,0 +1,48 @@
+.rating {
+  padding: 180px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 930px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #959595;
+  }
+}
+
+.rating-docs {
+  display: flex;
+
+  &__item {
+    text-align: center;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: var(--green-color);
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1549px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 1199px) {
+    flex-direction: row;
+  }
+  
+  img {
+    margin: 0;
+  }
+
+  &__text {
+    max-width: 170px;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #DEDEDE;
+
+    @media (max-width: 1549px) {
+      margin: 5px 0 0 0;
+      text-align: center;
+    }
+
+    @media (max-width: 1199px) {
+      margin: 0 0 0 20px;
+      text-align: left;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}

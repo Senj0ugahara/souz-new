@@ -1,0 +1,36 @@
+.reviews {
+  padding: 40px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__swiper {
+    width: 90%;
+  }
+}
+
+.reviews-button-prev,
+.reviews-button-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 52px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.reviews-button-prev {
+  left: 10px;
+  background-image: url(../images/reviews-button-prev.svg);
+}
+
+.reviews-button-next {
+  right: 10px;
+  background-image: url(../images/reviews-button-next.svg);
+}

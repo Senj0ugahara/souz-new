@@ -1,0 +1,130 @@
+.header {
+  height: 77px;
+  padding: 16px 0 17px;
+  background-color: var(--text-color);
+
+  @media (max-width: 1679px) {
+    height: auto;
+  }
+
+  @media (max-width: 1199px) {
+    height: 77px;
+  }
+  
+  &__container {
+    max-width: 1680px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1679px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: block;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: 1199px) {
+        display: block;
+        margin: 0 0 10px!important;
+      }
+    }
+
+    @media (max-width: 1679px) {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: 200px;
+    padding-left: 50px;
+    background-color: transparent;
+    border: 2px solid var(--green-color);
+    border-radius: 22px;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--green-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 21px;
+      width: 26px;
+      height: 26px;
+      background-image: url(../images/phone-icon.svg);
+      background-repeat: no-repeat;
+    }
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: 1199px) {
+        display: block;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    display: none;
+    justify-content: end;
+    align-items: center;
+    width: 60px;
+    height: 29px;
+
+    &-line {
+      display: inline-block;
+      width: 43px;
+      height: 3px;
+      background: var(--light-color);
+      border-radius: 5px;
+      transition: all .3s ease;
+
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 3px;
+        background: var(--light-color);
+        border-radius: 5px;
+        transition: all .3s ease;
+      }
+
+      &::before {
+        bottom: 0;
+      }
+
+      &::after {
+        top: 0;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      display: flex;
+    }
+  }
+}

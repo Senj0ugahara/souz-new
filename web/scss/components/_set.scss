@@ -1,0 +1,234 @@
+.set {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__left {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 380px;
+    margin-left: auto;
+  }
+}
+
+.set-item {
+  position: relative;
+  margin-bottom: 50px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 23%;
+    height: 1px;
+    background-color: #dbdbdb;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 27.4%;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    transform: rotate(45deg);
+  }
+
+  &_1 {
+    margin-bottom: 75px;
+    &::before {
+      width: 516px;
+    }
+  }
+
+  &_2 {
+    &::before {
+      left: 25%;
+      width: 478px;
+    }
+
+    &::after {
+      right: 29.1%;
+    }
+  }
+
+  &_3 {
+    &::before {
+      left: 35%;
+      width: 387px;
+    }
+
+    &::after {
+      right: 27.8%;
+    }
+  }
+
+  &_4 {
+    &::before {
+      left: 30%;
+      width: 177px;
+    }
+
+    &::after {
+      right: 52.9%;
+    }
+
+    .set-item__link {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -300px;
+        width: 80px;
+        height: 100px;
+        background-image: url(../images/set/termometr.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &_5 {
+    &::before {
+      left: 17%;
+      width: 731px;
+    }
+
+    &::after {
+      right: 12.9%;
+    }
+  }
+
+  &_6 {
+    &::before {
+      left: 28%;
+      width: 203px;
+    }
+
+    &::after {
+      right: 52.4%;
+    }
+
+    .set-item__link {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: -350px;
+        width: 112px;
+        height: 58px;
+        background-image: url(../images/set/instruction.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &_7 {
+    margin-bottom: 100px;
+
+    &::before {
+      left: 33%;
+      width: 547px;
+    }
+
+    &::after {
+      right: 14.5%;
+    }
+  }
+
+  &_8 {
+    &::before {
+      left: 22%;
+      width: 529px;
+      z-index: 1;
+    }
+
+    &::after {
+      right: 27.5%;
+    }
+  }
+
+  &_9 {
+    &::before {
+      left: 22%;
+      width: 529px;
+      z-index: 1;
+    }
+
+    &::after {
+      right: 27.5%;
+    }
+  }
+
+  &_10 {
+    &::before {
+      left: 22%;
+      width: 529px;
+      z-index: 1;
+    }
+
+    &::after {
+      right: 27.3%;
+    }
+  }
+
+  &_11 {
+    &::before {
+      left: 22%;
+      width: 427px;
+    }
+
+    &::after {
+      right: 37%;
+    }
+  }
+
+  &_12 {
+    &::before {
+      left: 22%;
+      width: 529px;
+      z-index: 1;
+    }
+
+    &::after {
+      right: 27.3%;
+    }
+  }
+
+  &_group {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: var(--text-color);
+
+    &_pic {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

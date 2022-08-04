@@ -1,0 +1,62 @@
+.gifs {
+  display: flex;
+  justify-content: space-between;
+
+  &__col {
+    width: 49%;
+
+    video {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  &__list {
+    max-width: 330px;
+    margin: 0 auto;
+
+    &_advantage {
+      .gifs__item {
+        &::before {
+          background-image: url(../images/check.svg);
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 34px;
+    font-size: 25px;
+    line-height: 32px;
+    color: var(--text-color);
+
+    span {
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/cross.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

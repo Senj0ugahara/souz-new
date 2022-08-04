@@ -1,0 +1,43 @@
+.exclusive {
+  padding: 150px 0;
+  background-image: url(../images/exclusive.png);
+  background-position: right 280px bottom;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--black-color);
+
+    span {
+      font-weight: 700;
+    }
+
+    &_first {
+      max-width: 750px;
+    }
+
+    &_second {
+      max-width: 1000px;
+    }
+  }
+
+  &__frame {
+    max-width: 1010px;
+    margin-bottom: 30px;
+    padding: 22px;
+    border: 3px solid;
+    border-image-source: linear-gradient(90.27deg, #E0CB7E 7.96%, #FEEFBF 47.85%, #E2CD95 100%);
+    border-image-slice: 1;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+}

@@ -1,0 +1,42 @@
+.table {
+  border-collapse: collapse;
+
+  &__col {
+    padding: 15px 0;
+    border: 2px solid #D7D7D7;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: var(--text-color);
+  }
+
+  &__text {
+    background-position: 14% center;
+    background-repeat: no-repeat;
+    text-align: left;
+
+    &_cross {
+      background-image: url(../images/cross.svg);
+    }
+
+    &_check {
+      background-image: url(../images/check.svg);
+    }
+
+    .table__desc {
+      width: 240px;
+      margin: 0 auto;
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--text-color);
+  }
+}

@@ -40,7 +40,7 @@ $(document).ready(function() {
       $('.modes-2__content > div').hide(300);
       $('.modes-2__content > div[filter=' +$(this).attr('filter') + ']').show(300);
     };
-  });
+  }); 
 });
 
 const swiper1 = new Swiper('.reviews__swiper', {

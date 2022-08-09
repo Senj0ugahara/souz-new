@@ -8,10 +8,6 @@
 
   &__subtitle {
     margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    color: var(--greend-color);
   }
 
   &__desc {
@@ -29,5 +25,15 @@
   &__table {
     width: 1260px;
     margin: 0 auto;
+
+    @media (max-width: 1439px) {
+      width: 100%;
+    }
+
+    @media (max-width: 1259px) {
+      display: inline-block;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
   }
 }

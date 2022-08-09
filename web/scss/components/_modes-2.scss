@@ -12,6 +12,10 @@
     background-image: url(../images/modes-2/modes-2-line.png);
     background-position: left bottom;
     background-repeat: no-repeat;
+
+    @media (max-width: 1439px) {
+      display: none;
+    }
   }
 
   &__btn {
@@ -24,12 +28,31 @@
 
     &:not(:last-child) {
       margin-right: 40px;
+
+      @media (max-width: 1439px) {
+        margin-right: 0;
+      }
     }
 
     &_active {
       margin-bottom: 2px;
       border-bottom: 3px solid var(--green-color);
-      color: #2DB869;
+      color: #DDAC76;
+
+      @media (max-width: 1439px) {
+        margin-bottom: 0;
+        border: none;
+      }
+    }
+
+    @media (max-width: 1439px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    @media (max-width: 1439px) {
+      display: none;
     }
   }
 }
@@ -54,6 +77,11 @@
     font-size: 30px;
     line-height: 36px;
     color: var(--text-color);
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__desc {
@@ -63,6 +91,98 @@
 
     span {
       font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    li {
+      font-size: 20px;
+      line-height: 30px;
+      color: #6A6A6A;
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.modes-2-mobile {
+  display: none;
+
+  @media (max-width: 1439px) {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 52px;
+    background-repeat: no-repeat;
+    opacity: .6;
+    cursor: pointer;
+
+    &_prev {
+      margin-right: 30px;
+      background-image: url(../images/reviews-button-prev.svg);
+
+      @media (max-width: 480px) {
+        margin-right: 0;
+      }
+    }
+
+    &_next {
+      margin-left: 30px;
+      background-image: url(../images/reviews-button-next.svg);
+
+      @media (max-width: 480px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__image {
+    width: 20%;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+      width: 40%;
+    }
+
+    &_small {
+      img {
+        width: 40%;
+      }
+    }
+  }
+
+  &__info {
+    padding: 20px 10px 100px;
+    background: #F8F8F8;
+  }
+
+  ul {
+    li {
+      font-size: 20px;
+      line-height: 30px;
+      color: #6A6A6A;
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -73,3 +73,16 @@ const swiper1 = new Swiper('.reviews__swiper', {
     }
   }
 });
+
+const swiper2 = new Swiper('.modes-2-mobile__swiper', {
+  loop: true,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+      nextEl: '.modes-2-mobile__icon_next',
+      prevEl: '.modes-2-mobile__icon_prev',
+  },
+});

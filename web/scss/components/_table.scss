@@ -5,6 +5,10 @@
     padding: 15px 0;
     border: 2px solid #D7D7D7;
     text-align: center;
+
+    @media (max-width: 1259px) {
+      padding: 15px;
+    }
   }
 
   &__title {
@@ -30,6 +34,10 @@
     .table__desc {
       width: 240px;
       margin: 0 auto;
+    }
+
+    @media (max-width: 1439px) {
+      background-position: 8% center;
     }
   }
 

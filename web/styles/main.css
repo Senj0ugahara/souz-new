@@ -1709,10 +1709,6 @@ img {
   margin-left: auto;
 }
 
-.set__modal {
-  display: none;
-}
-
 .set-item {
   position: relative;
   margin-bottom: 50px;

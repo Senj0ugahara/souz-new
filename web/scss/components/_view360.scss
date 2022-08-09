@@ -5,12 +5,12 @@
 
   &__content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__left {
-    padding-top: 120px;
+    padding-top: 140px;
     align-self: flex-start;
     text-align: right;
 
@@ -25,18 +25,18 @@
 
   &__middle {
     position: relative;
-    height: 780px;
-    padding: 0 40px;
+    width: 40%;
+    height: 600px;
+    text-align: center;
 
     &_icon {
       position: absolute;
       top: 0;
-      right: -140px;
+      right: 0;
     }
   }
 
   &__right {
-    padding-bottom: 220px;
     align-self: flex-end;
 
     .view360__item {
@@ -69,5 +69,14 @@
       background-image: url(../images/view360/arrow.svg);
       background-repeat: no-repeat;
     }
+  }
+}
+
+.cloudimage-360 {
+  position: initial!important;
+
+  canvas {
+    width: 210px!important;
+    height: 600px!important;
   }
 }

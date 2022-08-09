@@ -2025,16 +2025,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .view360__left {
-  padding-top: 120px;
+  padding-top: 140px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: right;
@@ -2050,18 +2050,18 @@ img {
 
 .view360__middle {
   position: relative;
-  height: 780px;
-  padding: 0 40px;
+  width: 40%;
+  height: 600px;
+  text-align: center;
 }
 
 .view360__middle_icon {
   position: absolute;
   top: 0;
-  right: -140px;
+  right: 0;
 }
 
 .view360__right {
-  padding-bottom: 220px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -2096,6 +2096,15 @@ img {
   height: 6px;
   background-image: url(../images/view360/arrow.svg);
   background-repeat: no-repeat;
+}
+
+.cloudimage-360 {
+  position: initial !important;
+}
+
+.cloudimage-360 canvas {
+  width: 210px !important;
+  height: 600px !important;
 }
 
 .rating {

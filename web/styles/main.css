@@ -1588,6 +1588,12 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .modes-item__image_mobile {
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   .modes-item__btn {
     margin: 0 auto;

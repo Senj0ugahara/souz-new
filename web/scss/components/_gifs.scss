@@ -2,8 +2,16 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+
   &__col {
     width: 49%;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
 
     video {
       width: 100%;
@@ -18,11 +26,19 @@
     line-height: 30px;
     color: var(--text-color);
     text-align: center;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
     max-width: 330px;
     margin: 0 auto;
+
+    @media (max-width: 1199px) {
+      margin: 0 auto 50px;
+    }
 
     &_advantage {
       .gifs__item {

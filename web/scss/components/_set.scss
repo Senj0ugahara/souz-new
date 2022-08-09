@@ -23,6 +23,10 @@
     max-width: 380px;
     margin-left: auto;
   }
+
+  &__modal {
+    display: none;
+  }
 }
 
 .set-item {

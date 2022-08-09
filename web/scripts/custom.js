@@ -43,6 +43,12 @@ $(document).ready(function() {
   }); 
 });
 
+// set-modal fancybox
+$('[data-fancybox="set"]').fancybox({
+  loop: true,
+  arrows: false,
+});
+
 const swiper1 = new Swiper('.reviews__swiper', {
   loop: true,
   slidesPerView: 1,

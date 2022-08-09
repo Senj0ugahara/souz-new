@@ -40,6 +40,18 @@
       width: 1px;
       height: 200px;
       border-left: 1px dashed #FFEBEB;
+
+      @media (max-width: 505px) {
+        height: 240px;
+      }
+
+      @media (max-width: 489px) {
+        height: 270px;
+      }
+
+      @media (max-width: 351px) {
+        display: none;
+      }
     }
   }
 

@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -16,6 +20,21 @@
     .logo__text {
       margin: 10px 0 10px;
       color: var(--text-color);
+
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      align-items: center;
+    }
+  }
+
+  ul {
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -41,9 +60,24 @@
     line-height: 16px;
     color: #ABABAB;
   }
+
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 .footer-item {
   text-align: right;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 
   &__link {
     font-weight: 300;
